@@ -32,7 +32,7 @@ public class CajaController {
 		return cajaServideImpl.guardarCaja(caja);
 	}
 
-	@GetMapping("/caja/{num_referencia}")
+	@GetMapping("/cajas/{num_referencia}")
 	public Caja cajaXID(@PathVariable(name = "num_referencia") String num_referencia) {
 
 		Caja caja_xid = new Caja();
