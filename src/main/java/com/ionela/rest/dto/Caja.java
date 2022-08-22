@@ -57,8 +57,7 @@ public class Caja {
 		this.valor = valor;
 	}
 
-	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Almacen")
+	
 	public Almacen getAlmacen() {
 		return almacen;
 	}
