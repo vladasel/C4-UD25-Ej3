@@ -60,7 +60,7 @@ public class AlmacenController {
 		return almacen_actualizado;
 	}
 
-	@DeleteMapping("/almacen/{id}")
+	@DeleteMapping("/almacenes/{id}")
 	public void eleiminarEmpleado(@PathVariable(name = "id") Long id) {
 		almacenServideImpl.eliminarAlmacen(id);
 	}
